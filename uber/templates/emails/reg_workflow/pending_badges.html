@@ -22,7 +22,7 @@
         We understand that some people encountered a technical issue while attempting to pay for their registration, 
         and we have now fixed all the issues we're aware of. If you attempted to register and were unable to complete 
         payment, please try your payment again. If you run into any further issues, please email 
-        <a href="registration@furfest.org" target="_blank">registration@furfest.org</a>.
+        {{ c.REGDESK_EMAIL|email_only|email_to_link }}.
     </p>
     <p> If these issues affected your registration or you wish to pay for your pending registration, you can
     {% else %}
